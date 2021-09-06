@@ -9,15 +9,10 @@
 <form> 
 <table> 
     <tr> 
-        <td> First Name: </td> 
+        <td> Full Name: </td> 
         <td> <input type="text" id="txtFirstName" minlength="4" onkeypress="return validateFullName(event,this);" ></td> 
         <td><label id="errorFirstName" class="redcolor"></label></td> 
  </tr>
-    <tr>
-        <td> Last Name: </td> 
-        <td> <input type="text" id="txtLastName" minlength="4" onkeypress="return validateFullName(event,this);" > </td> 
-        <td> <label id="errorLastName" class="redcolor"></label></td>
-    </tr> 
     <tr> 
         <td> Email ID: </td> 
         <td><input type="text" id="txtEmail"  onchange="validateEMail(this.value);"/></td> 
@@ -25,7 +20,7 @@
     </tr> 
     <tr> 
         <td> Phone Number: </td> 
-        <td> <input type="text" id="txtPhone" maxlength="14"  onkeypress="return validatePhone(event,this);" onchange="formatPhoneNumberonchange();"> 
+        <td> <input type="text" id="txtPhone" onkeypress="return validatePhone(event,this);" onchange="formatPhoneNumberonchange();"> 
         <img id="imageLogo" class="img" style="visibility: hidden;"/></td> 
         <td> <label id="errorTelephone" class="redcolor"></label></td>
     </tr>
