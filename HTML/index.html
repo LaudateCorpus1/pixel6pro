@@ -25,7 +25,7 @@
     </tr> 
     <tr> 
         <td> Phone Number: </td> 
-        <td> <input type="text" id="txtPhone"  onkeypress="return validatePhone(event,this);" onchange="formatPhoneNumberonchange();"> 
+        <td> <input type="text" id="txtPhone" maxlength="14"  onkeypress="return validatePhone(event,this);" onchange="formatPhoneNumberonchange();"> 
         <img id="imageLogo" class="img" style="visibility: hidden;"/></td> 
         <td> <label id="errorTelephone" class="redcolor"></label></td>
     </tr>
